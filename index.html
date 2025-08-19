@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form">
+            <label for="full-name">Full Name</label>
+            <input type="text" placeholder="What should we call you?" id="full-name" aria-required="true">
+            <label for="email">Email</label>
+            <input type="email" value="john@doe.com" id="email" aria-required="true">
+            <p>Email is aready taken</p>
+            <label for="password">Enter Password</label>
+            <div class="password-wrapper">
+                <input type="password" name="" id="password" placeholder="xxxxxxxx" aria-required="true">
+                <button type="button" class="toggle-password" aria-label="Password is hidden">👁</button>
+            </div>
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-wrapper">
+                <input type="password" name="" id="confirm-password" placeholder="xxxxxxxx" aria-required="true">
+                <button type="button" class="toggle-password" aria-label="Password is hidden">👁</button>
+            </div>
+            <button type="submit" class="form__submit">Update Profile</button>
+        </form>
+        <div class="progress">
+            <div class="progress__circle">65%</div>
+            <h3>Profile Completeness</h3>
+            <div class="progress__tasks">
+                <p class="progress__done">Create Account</p>
+                <p class="progress__done">Update Roadmap Progress</p>
+                <p class="progress__done">Setup Public Profile</p>
+                <p>Complete your first project</p>
+                <p>Invite your Friends</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
