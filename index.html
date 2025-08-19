@@ -14,7 +14,7 @@
             <label for="full-name">Full Name</label>
             <input type="text" placeholder="What should we call you?" id="full-name" aria-required="true">
             <label for="email">Email</label>
-            <input type="email" value="john@doe.com" id="email" aria-required="true">
+            <input type="email" value="john@doe.com" id="email" aria-required="true" aria-invalid="true">
             <p>Email is aready taken</p>
             <label for="password">Enter Password</label>
             <div class="password-wrapper">
@@ -23,7 +23,8 @@
             </div>
             <label for="confirm-password">Confirm Password</label>
             <div class="password-wrapper">
-                <input type="password" name="" id="confirm-password" placeholder="xxxxxxxx" aria-required="true">
+                <input type="password" name="" id="confirm-password" placeholder="xxxxxxxx" aria-required="true"
+                    aria-invalid="true">
                 <button type="button" class="toggle-password" aria-label="Password is hidden">👁</button>
             </div>
             <button type="submit" class="form__submit">Update Profile</button>
